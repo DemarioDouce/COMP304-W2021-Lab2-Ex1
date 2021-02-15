@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_types_array">
+        <item>Select</item>
+        <item>Apartment</item>
+        <item>Detached home</item>
+        <item>Semi-detached home</item>
+        <item>Condominium</item>
+        <item>Townhouse</item>
+    </string-array>
+</resources>
