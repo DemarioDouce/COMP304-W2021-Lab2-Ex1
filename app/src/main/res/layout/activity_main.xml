@@ -6,17 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+    <Button style="@style/primaryBtnStyle"
         android:id="@+id/enterBtn"
-        android:layout_width="270dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="348dp"
-        android:backgroundTint="@color/red"
         android:onClick="openHomeStyles"
         android:text="@string/enter"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

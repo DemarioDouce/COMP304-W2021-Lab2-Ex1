@@ -2,11 +2,17 @@ package com.demariodouce.demariodouce_comp304sec003_lab2_ex1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
-public class HomeStylesActivity extends AppCompatActivity {
+public class HomeStylesActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
 
     @Override
@@ -23,7 +29,32 @@ public class HomeStylesActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
+        // Interface implementation
+        spinner.setOnItemSelectedListener(this);
+    }
 
+    //Reusable intent
+    public void createIntent(Class name){
+        Intent intent = new Intent(this, name);
+        startActivity(intent);
+    }
+    public void onItemSelected(AdapterView<?> parent, View view,
+                               int pos, long id) {
+        // An item was selected. You can retrieve the selected item using
+       if (pos == 1){
+createIntent(ApartmentActivity.class);
+       } else if (pos == 2 ){
+           createIntent(DetachedHomeActivity.class);
+       } else if (pos ==3){
+           createIntent(SemiDetachedHomeActivity.class);
+       } else if (pos == 4){
+           createIntent(CondominiumActivity.class);
+       } else if (pos == 5) {
+           createIntent(TownhouseActivity.class);
+       }
+    }
 
+    public void onNothingSelected(AdapterView<?> parent) {
+        // Another interface callback
     }
 }

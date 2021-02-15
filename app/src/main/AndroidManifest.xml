@@ -9,9 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DemarioDouce_COMP304Sec003_Lab2_Ex1">
-        <activity android:name=".HomeStylesActivity"
-            android:parentActivityName=".MainActivity"
-            ></activity>
+        <activity android:name=".TownhouseActivity"
+            android:parentActivityName=".HomeStylesActivity"></activity>
+        <activity android:name=".CondominiumActivity"
+            android:parentActivityName=".HomeStylesActivity"/>
+        <activity
+            android:name=".SemiDetachedHomeActivity"
+            android:parentActivityName=".HomeStylesActivity" />
+        <activity
+            android:name=".DetachedHomeActivity"
+            android:parentActivityName=".HomeStylesActivity" />
+        <activity
+            android:name=".ApartmentActivity"
+            android:parentActivityName=".HomeStylesActivity" />
+        <activity
+            android:name=".HomeStylesActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
