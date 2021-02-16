@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TownhouseActivity">
+    android:orientation="horizontal" >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:padding="5dp"
+        android:src="@drawable/townhouse1"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:text="Townhouse"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4d4d4d"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2346 Danforth Rd, M1J0A9, Scarborough, ON" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="$1,850.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/physically"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="Physically" />
+
+        <CheckBox
+            android:id="@+id/virtually"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="Virtually" />
+    </LinearLayout>
+
+</LinearLayout>

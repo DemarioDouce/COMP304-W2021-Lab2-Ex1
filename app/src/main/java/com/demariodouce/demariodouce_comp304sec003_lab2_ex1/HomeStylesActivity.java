@@ -52,6 +52,8 @@ createIntent(ApartmentActivity.class);
            createIntent(CondominiumActivity.class);
        } else if (pos == 5) {
            createIntent(TownhouseActivity.class);
+       } else {
+           pos=0;
        }
     }
 
