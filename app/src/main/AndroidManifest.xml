@@ -9,22 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DemarioDouce_COMP304Sec003_Lab2_Ex1">
-        <activity android:name=".TownhouseActivity"
-            android:parentActivityName=".HomeStylesActivity"></activity>
-        <activity android:name=".CondominiumActivity"
-            android:parentActivityName=".HomeStylesActivity"/>
+        <activity android:name=".CheckoutActivity"
+            android:parentActivityName=".HomeStylesActivity"
+            android:label="Checkout"></activity>
+        <activity
+            android:name=".TownhouseActivity"
+            android:parentActivityName=".HomeStylesActivity"
+            android:label="Townhouse"/>
+        <activity
+            android:name=".CondominiumActivity"
+            android:parentActivityName=".HomeStylesActivity"
+            android:label="Condominium"/>
         <activity
             android:name=".SemiDetachedHomeActivity"
-            android:parentActivityName=".HomeStylesActivity" />
+            android:parentActivityName=".HomeStylesActivity"
+            android:label="Semi Detached Home"/>
         <activity
             android:name=".DetachedHomeActivity"
-            android:parentActivityName=".HomeStylesActivity" />
+            android:parentActivityName=".HomeStylesActivity"
+            android:label="Detached Home"/>
         <activity
             android:name=".ApartmentActivity"
-            android:parentActivityName=".HomeStylesActivity" />
+            android:parentActivityName=".HomeStylesActivity"
+            android:label="Apartment"/>
         <activity
             android:name=".HomeStylesActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:label="Home Styles"
+            />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
