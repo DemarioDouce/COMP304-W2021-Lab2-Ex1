@@ -43,7 +43,7 @@ public class TownhouseActivity extends AppCompatActivity {
         TextView subtitle = (TextView) findViewById(R.id.subtitle);
         TextView price = (TextView) findViewById(R.id.price);
         Intent intent = new Intent(this, CheckoutActivity.class);
-        intent.putExtra("icon",R.drawable.apartment1);
+        intent.putExtra("icon",R.drawable.townhouse1);
         intent.putExtra("title",title.getText().toString());
         intent.putExtra("subtitle",subtitle.getText().toString());
         intent.putExtra("price",price.getText().toString());
