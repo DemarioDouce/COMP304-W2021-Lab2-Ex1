@@ -2,61 +2,73 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" >
-
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:padding="5dp"
-        android:src="@drawable/apartment1"
-        android:contentDescription="TODO" />
-
-    <LinearLayout
-        android:layout_width="190dp"
-        android:layout_height="90dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:padding="2dp"
-            android:text="Apartment"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#4d4d4d"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="2575 Danforth Avenue, Toronto, ON, M4C 1L5" />
-
-        <TextView
-            android:id="@+id/price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="$1,750.00" />
-    </LinearLayout>
+    android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <CheckBox
-            android:id="@+id/physically"
-            android:layout_width="105dp"
-            android:buttonTint="@color/red"
-            android:layout_height="match_parent"
-            android:gravity="right|center"
-            android:text="Physically" />
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:contentDescription="TODO"
+            android:padding="5dp"
+            android:src="@drawable/apartment1" />
 
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:text="Apartment"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#4d4d4d"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="2575 Danforth Avenue, Toronto, ON, M4C 1L5" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="$1,750.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/physically"
+                android:layout_width="105dp"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/red"
+                android:gravity="right|center"
+                android:text="Physically" />
+
+        </LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="@style/primaryBtnStyle"
+        android:layout_gravity="center"
+        android:text="CHECKOUT" />
 
 </LinearLayout>
