@@ -40,6 +40,7 @@ public class HomeStylesActivity extends AppCompatActivity implements AdapterView
     }
     public void onItemSelected(AdapterView<?> parent, View view,
                                int pos, long id) {
+
         // An item was selected. You can retrieve the selected item using
        if (pos == 1){
 createIntent(ApartmentActivity.class);
