@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DemarioDouce_COMP304Sec003_Lab2_Ex1">
-        <activity android:name=".ConfirmationActivity"></activity>
+        <activity android:name=".ThankYouActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Thank You"></activity>
+        <activity
+            android:name=".ConfirmationActivity"
+            android:parentActivityName=".PaymentActivity"
+            android:label="Confirmation"/>
         <activity
             android:name=".PaymentActivity"
             android:label="Payment"

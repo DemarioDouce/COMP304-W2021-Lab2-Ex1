@@ -6,4 +6,90 @@
     android:layout_height="match_parent"
     tools:context=".ConfirmationActivity">
 
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Please enter your full name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextRandomQuestion1"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="Favourite sport"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextRandomQuestion2"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="212dp"
+        android:ems="10"
+        android:hint="Favourite food"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Information:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <TextView
+        android:id="@+id/paymentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Payment Information:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextRandomQuestion2" />
+
+    <EditText
+        android:id="@+id/paymentMethod"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="328dp"
+        android:ems="10"
+        android:hint="Enter debit/credit card number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFinish"
+        style="@style/primaryBtnStyle"
+        android:layout_gravity="center"
+        android:layout_marginBottom="284dp"
+        android:text="FINISH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
