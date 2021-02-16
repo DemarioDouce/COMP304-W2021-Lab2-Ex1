@@ -51,17 +51,12 @@
 
         <CheckBox
             android:id="@+id/physically"
-            android:layout_width="95dp"
-            android:layout_height="wrap_content"
-            android:layoutDirection="rtl"
+            android:layout_width="105dp"
+            android:buttonTint="@color/red"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
             android:text="Physically" />
 
-        <CheckBox
-            android:id="@+id/virtually"
-            android:layout_width="95dp"
-            android:layout_height="wrap_content"
-            android:layoutDirection="rtl"
-            android:text="Virtually" />
     </LinearLayout>
 
 </LinearLayout>
